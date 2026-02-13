@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Event DashBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>🎯 Smart Event Dashboard</h1>
+    <div id="hero">
+        <div class="add-event-section">
+            <form id="event-form">
+                <h2>Add New Event</h2>
+                <label for="title">Enter Title:</label>
+                <input type="text" name="title" id="title">
+                <label for="date">Enter Date:</label>
+                <input type="date" name="date" id="date">
+                <label for="category">Enter Category:</label>
+                <select name="category" id="category">
+                    <option value="Conference">Conference</option>
+                    <option value="Social">Workshop</option>
+                    <option value="Bootcamp">Meetup</option>
+                    <option value="Workshop">Webinar</option>
+                    <option value="Others">Others</option>
+                </select>
+                <label for="Description">Description: </label>
+                <textarea name="Description" id="Description" rows="4"></textarea>
+                <button type="submit" id="submit-btn">Add Event</button>
+            </form>
+        </div>
+        <div class="show-event-section">
+            <h2>My Events</h2>
+            <div class="grid-card" id="grid-card">
+                <div class="card">
+                    <button class="cancel-btn" id="-1">&#x274C;</button>
+                    <h4>idea</h4>
+                    <p class="date">&#128197; 08-90-2003</p>
+                    <br>
+                    <label>Social</label>
+                    <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, vitae?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
